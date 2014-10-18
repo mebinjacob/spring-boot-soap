@@ -1,0 +1,14 @@
+<xs:schema elementFormDefault="qualified"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:hc="http://hcentive.com" targetNamespace="http://hcentive.com/service">
+	<xs:import namespace="http://hcentive.com" schemaLocation="coa_application.xsd" />
+	<xs:element name="FormResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Form1" type="hc:Form" />
+				<xs:element name="ErrorMessage" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+</xs:schema>
+ 
